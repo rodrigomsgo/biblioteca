@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca do Jurista Brasileiro</title>
+    <style>
+        body {
+            background-color: #1f2f1f; /*Fundo verde escuro*/
+            color: #ffffff; /*Texto em branco*/
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {   /*cabeçalho*/
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {  /*h de header - cabeçalho*/
+            font-size: 32px;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 { 
+            font-size: 22px;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        .quadro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65px; /*Altura dos quadros*/
+            border: 1px solid #736922;
+            border-radius: 25px; /*vértices dos quadros*/
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Biblioteca do Jurista Brasileiro</h1>
+        <h2>Textos para advogados e estudantes<br>  </h2>
+    </header>
+
+    <div class="container">
+        <!-- Link para as páginas específicas de cada tema do direito -->
+        <a href="#" class="quadro" data-cor="#330033">Direito Constitucional</a>
+        <a href="#" class="quadro" data-cor="#21273a">Direito Civil</a>
+        <a href="#" class="quadro" data-cor="#333366">Direito Penal</a>
+        <a href="#" class="quadro" data-cor="#660000">Direito Administrativo</a>
+        <a href="#" class="quadro" data-cor="#666600">Direito Ambiental</a>
+        <a href="#" class="quadro" data-cor="#607d8b">Direito Tributário</a>
+        <a href="#" class="quadro" data-cor="#333300">Direito Trabalhista</a>
+        <a href="#" class="quadro" data-cor="#2e064f">Direito Agrário</a>
+        <a href="#" class="quadro" data-cor="#550a1d">Direito Internacional</a>
+        <a href="#" class="quadro" data-cor="#0e3433">Direito Previdenciário</a>
+        <a href="#" class="quadro" data-cor="#450523">Direito de Família</a>
+        <a href="#" class="quadro" data-cor="#2b4917">Direito Imobiliário</a>
+
+        <a href="#" class="quadro" data-cor="#482756">Direito do Consumidor</a>
+        <a href="#" class="quadro" data-cor="#304a17">Direito Canônico</a>
+        <a href="#" class="quadro" data-cor="#22423a">LGPD</a>
+        <a href="#" class="quadro" data-cor="#6b0415">Dicionário</a>
+        <a href="#" class="quadro" data-cor="#303215">Artigos</a>
+        <a href="#" class="quadro" data-cor="#075b3d">Leis</a>
+    </div>
+
+    <!-- Texto sobre o contato -->
+    <div style="background-color: #1f2f1f; padding: 18px; text-align: center;">
+        <h2>Contato</h2>
+        <p>Se você tiver alguma sugestão ou quiser colaborar com a <i>Biblioteca do Jurista Brasileiro</i>, entre em contato conosco:</p>
+        <p>Email: rodrigomsgo@gmail.com . . . . . . . Telefone: (62) 9-8590-1822</p>
+
+    <script>
+        // Obter todos os elementos com a classe "quadro"
+        const quadros = document.querySelectorAll(".quadro");
+
+        // Aplicar cores personalizadas a cada quadro
+        quadros.forEach(quadro => {
+            const corPersonalizada = quadro.getAttribute("data-cor");
+            quadro.style.backgroundColor = corPersonalizada;
+        });
+    </script>
+</body>
+
+</html>
